@@ -1,7 +1,16 @@
-<div class="col">
-    The passage experienced a surge in popularity during the 1960s when Letraset
-    used it on their dry-transfer sheets, and again during the 90s as desktop
-    publishers bundled the text with their software. Today it's seen all around
-    the web; on templates, websites, and stock designs. Use our generator to get
-    your own, or read on for the authoritative history of lorem ipsum.
+<div class="row">
+
+<div *ngFor="let gif of resultados" class="col-md-4 col-sm-6">
+
+  <div class="card">
+    <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">
+        {{ gif.title }}
+      </p>
+    </div>
   </div>
+  
+</div>
+
+</div>
